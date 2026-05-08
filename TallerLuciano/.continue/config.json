@@ -1,0 +1,9 @@
+{
+  "models": [
+    {
+      "title": "Qwen 0.5B Local",
+      "provider": "ollama",
+      "model": "qwen2.5:0.5b"
+    }
+  ]
+}
