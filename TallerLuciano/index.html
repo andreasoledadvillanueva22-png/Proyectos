@@ -93,7 +93,7 @@
         .feature-title { font-size: 1.1rem; font-weight: 700; margin-bottom: 8px; color: var(--text); }
         .feature-desc { font-size: 0.9rem; color: var(--text-muted); font-weight: 300; line-height: 1.5; }
         
-        /* NUEVA: GALERÍA SECTION */
+        /* GALERÍA SECTION */
         .galeria-section { background: var(--primary); padding: 100px 20px; }
         .galeria-header { margin-bottom: 50px; }
         .galeria-label { font-size: 0.85rem; color: var(--accent); text-transform: uppercase; letter-spacing: 3px; margin-bottom: 15px; display: flex; align-items: center; gap: 10px; }
@@ -220,6 +220,16 @@
             .form-row { grid-template-columns: 1fr; }
             .mapa-wrapper { min-height: 300px; order: -1; }
         }
+        
+        /* FIX: Espacio para header fijo al hacer scroll */
+        #inicio, #turno, #servicios, #galeria, #nosotros, #contacto, #ubicacion {
+            scroll-margin-top: 100px;
+        }
+        @media (max-width: 768px) {
+            #inicio, #turno, #servicios, #galeria, #nosotros, #contacto, #ubicacion {
+                scroll-margin-top: 70px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -314,7 +324,7 @@
         </div>
     </section>
 
-    <!-- NUEVA: Galería Section -->
+    <!-- Galería Section -->
     <section class="galeria-section" id="galeria" data-aos="fade-up">
         <div class="container">
             <div class="galeria-header">
